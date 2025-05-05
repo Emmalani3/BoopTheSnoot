@@ -1,0 +1,27 @@
+.game-container {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#mainImage {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+#boopButton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
