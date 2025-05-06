@@ -55,13 +55,20 @@ function loadRandomAnimal() {
 // Initial positioning
 loadRandomAnimal();
 
+
+const counter = document.getElementById("counter");
+let count = 0;
+
 boopButton.addEventListener("click", () => {
     if (!isBooped) {
         // Show the boop image
         mainImage.src = `animals/${imageName}_boop.png`;
         isBooped = true;
+        count++;
+        counter.textContent = count;
         boopButton.textContent = "  ";
 
+        
         // After 1 second, load a new random animal
         setTimeout(() => {
             loadRandomAnimal();
@@ -69,3 +76,7 @@ boopButton.addEventListener("click", () => {
     }
 });
 
+reset.addEventListener("click", () => {
+    counter.textContent = 0;
+    count = 0;
+});
