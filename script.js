@@ -1,24 +1,24 @@
 const animals = [
-    { animal: "blond", x: "155", y: "280" },
-    { animal: "bunny", x: "170", y: "300" },
-    { animal: "calico", x: "155", y: "250" },
-    { animal: "chihuahua", x: "165", y: "360" },
-    { animal: "collie", x: "160", y: "315" },
-    { animal: "corgi", x: "157", y: "245" },
-    { animal: "golden", x: "157", y: "300" },
-    { animal: "greyCat", x: "153", y: "245" },
-    { animal: "hound", x: "153", y: "260" },
-    { animal: "husky", x: "160", y: "310" },
-    { animal: "orange", x: "165", y: "220" },
-    { animal: "pitty", x: "160", y: "333" },
-    { animal: "poodle", x: "155", y: "215" },
-    { animal: "ragdoll", x: "150", y: "290" },
-    { animal: "rottie", x: "160", y: "260" },
-    { animal: "saimese", x: "160", y: "265" },
-    { animal: "sphynx", x: "160", y: "310" },
-    { animal: "tabby", x: "167", y: "237" },
-    { animal: "weiner", x: "147", y: "237" },
-    { animal: "wild", x: "163", y: "265" },
+    { animal: "blond", x: 50, y: 45 },
+    { animal: "bunny", x: 53, y: 50 },
+    { animal: "calico", x: 49, y: 40 },
+    { animal: "chihuahua", x: 52, y: 61 },
+    { animal: "collie", x: 51, y: 52 },
+    { animal: "corgi", x: 49, y: 38 },
+    { animal: "golden", x: 49, y: 48 },
+    { animal: "greyCat", x: 48, y: 38 },
+    { animal: "hound", x: 48, y: 42 },
+    { animal: "husky", x: 50, y: 51 },
+    { animal: "orange", x: 52, y: 33 },
+    { animal: "pitty", x: 50, y: 55 },
+    { animal: "poodle", x: 49, y: 33 },
+    { animal: "ragdoll", x: 47.5, y: 47 },
+    { animal: "rottie", x: 51, y: 41 },
+    { animal: "saimese", x: 50, y: 42 },
+    { animal: "sphynx", x: 50.5, y: 51 },
+    { animal: "tabby", x: 53, y: 38 },
+    { animal: "weiner", x: 47, y: 37 },
+    { animal: "wild", x: 51.5, y: 43 },
 
 ]
 //select random image
@@ -46,9 +46,9 @@ function loadRandomAnimal() {
 
     mainImage.src = `animals/${imageName}.png`;
 
-    boopButton.style.left = `${animalObj.x}px`;
-    boopButton.style.top = `${animalObj.y}px`;
-    boopButton.textContent = "o";
+    boopButton.style.left = `${animalObj.x}%`;
+    boopButton.style.top = `${animalObj.y}%`;
+    boopButton.textContent = "  ";
 }
 
 
@@ -60,7 +60,7 @@ boopButton.addEventListener("click", () => {
         // Show the boop image
         mainImage.src = `animals/${imageName}_boop.png`;
         isBooped = true;
-        boopButton.textContent = "x";
+        boopButton.textContent = "  ";
 
         // After 1 second, load a new random animal
         setTimeout(() => {

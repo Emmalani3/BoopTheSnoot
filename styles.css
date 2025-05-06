@@ -1,6 +1,27 @@
+header {
+    background-color: darkcyan;
+    color: white;
+    padding: 50px;  
+    justify-items: center;  
+    margin-bottom: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: aquamarine; /* Optional: gives a subtle contrast */
+}
+
 .game-container {
     display: inline-block;
-    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
+    margin: 40px auto;
 }
 
 .image-wrapper {
@@ -21,7 +42,9 @@
     font-size: 20px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0);
-    border: 2px solid rgba(200, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0);
     cursor: pointer;
     transform: translate(-50%, -50%);
+    z-index: 10;
 }
+
