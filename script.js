@@ -19,7 +19,7 @@ const animals = [
     { animal: "tabby", x: 53, y: 38 },
     { animal: "weiner", x: 47, y: 37 },
     { animal: "wild", x: 51.5, y: 43 },
-
+    { animal: "bluie", x: 50.5, y: 50 },
 ]
 //select random image
 function randomNum(arr) {
